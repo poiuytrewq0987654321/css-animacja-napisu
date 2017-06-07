@@ -1,0 +1,43 @@
+*{
+    margin:0;
+}
+body{
+    box-sizing: border-box;
+    display: inline-block;
+}
+div.container{
+    width:400px;
+    height:200px;
+    background-color: darkred;
+    position: relative;
+}
+.container .napis{
+    position: absolute;
+    width:400px;
+    color:#fff;
+    text-align: center;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:30px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    animation-name: animacja;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animacja {
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.3;
+    }
+    100%{
+        opacity:1;
+    }
+    
+}
+
